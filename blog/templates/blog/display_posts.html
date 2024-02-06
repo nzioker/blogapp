@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Display Posts</title>
+  </head>
+  <body>
+    <h2>All Posts</h2>
+    {% for article in articles %}
+    <h3>{{ article.title }}</h3>
+    <p>{{ article.post }}</p>
+    {% endfor %}
+  </body>
+</html>
